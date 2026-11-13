@@ -72,6 +72,11 @@ public class RideCalculator {
      * @return true bila valid, false bila validate melempar InvalidDistanceException
      */
     public static boolean isAcceptable(Ride order) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        try {
+            validate(order);
+            return true;
+        } catch (InvalidDistanceException e) {
+            return false;
+        }
     }
 }
