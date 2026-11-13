@@ -1,6 +1,9 @@
 package id.ac.polinema.quiz2;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * TAHAP 4 dan 5 (collections dan SOLID): pengatur perjalanan yang menyimpan
@@ -16,6 +19,7 @@ import java.util.List;
  * membuat CashPayment di dalam kelas ini.
  */
 public class RideDispatcher {
+    private PaymentMethod payment;
 
     /**
      * Membuat pengatur perjalanan kosong dan menyimpan metode pembayaran yang diberikan.
@@ -23,7 +27,7 @@ public class RideDispatcher {
      * @param payment metode pembayaran yang dipakai saat checkout
      */
     public RideDispatcher(PaymentMethod payment) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        this.payment = payment;
     }
 
     /**
